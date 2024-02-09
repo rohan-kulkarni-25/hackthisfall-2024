@@ -14,8 +14,9 @@ app.use(cookieParser());
 //routes declaration
 
 import creatorRouter from "./routes/creators.routes.js";
+import articleRouter from "./routes/articles.routes.js";
 
-app.use("/api/v1/creators", creatorRouter);
-// http://localhost:8000/api/v1/users/register
+app.use("/api/v1/creator", creatorRouter);
+app.use("/api/v1/article", articleRouter);
 
 export { app };
